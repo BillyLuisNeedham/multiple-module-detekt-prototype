@@ -1,4 +1,4 @@
-package com.billyluisneedham.multiplemoduledetektprototype.dataandroid.repositories
+package com.billyluisneedham.multiplemoduledetektprototype.dataandroid.repositories.count
 
 import com.billyluisneedham.multiplemoduledetektprototype.data.repository.count.CountLocalDataSource
 import dagger.Binds
