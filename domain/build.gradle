@@ -1,5 +1,7 @@
 plugins {
     id 'kotlin'
+    //    TODO remove or restore
+//    id "io.gitlab.arturbosch.detekt" version "1.18.1"
 }
 
 dependencies {
@@ -11,3 +13,9 @@ dependencies {
     
     testImplementation libs.junit
 }
+
+//    TODO remove or restore
+//detekt {
+//    config = files("../detekt-config.yaml")
+//    buildUponDefaultConfig = true
+//}

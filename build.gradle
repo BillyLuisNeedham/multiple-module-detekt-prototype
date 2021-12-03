@@ -11,6 +11,21 @@ buildscript {
     }
 }
 
+plugins {
+    id "io.gitlab.arturbosch.detekt" version "1.18.1"
+}
+
+subprojects {
+    apply plugin: "io.gitlab.arturbosch.detekt"
+
+    detekt {
+        config = files("$rootDir/detekt-config.yaml")
+        buildUponDefaultConfig = true
+        parallel = true
+        ignoreFailures = false
+    }
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }

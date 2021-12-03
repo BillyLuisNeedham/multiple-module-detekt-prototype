@@ -4,6 +4,8 @@ plugins {
 
     id 'kotlin-android'
     id 'kotlin-kapt'
+//    TODO remove or restore
+//    id "io.gitlab.arturbosch.detekt" version "1.18.1"
 }
 
 android {
@@ -68,3 +70,11 @@ dependencies {
     androidTestImplementation libs.compose.uiTestJunit
     debugImplementation libs.bundles.composeDebug
 }
+
+//    TODO remove or restore
+//detekt {
+//    config = files("../detekt-config.yaml")
+//    buildUponDefaultConfig = true
+//    parallel = true
+//    ignoreFailures = true
+//}
